@@ -43,12 +43,12 @@ export default function About() {
         {/* Photo Container */}
         <div className="reveal relative aspect-[3/4] w-full hidden md:block">
           <motion.div
-            style={{ y: imgY }}
-            className="absolute inset-0 rounded-lg overflow-hidden grayscale sepia-[0.25] brightness-[0.82] contrast-[1.05]"
-            style={{
+            style={{ 
+              y: imgY,
               maskImage: 'linear-gradient(to right, black 60%, transparent 100%)',
               WebkitMaskImage: 'linear-gradient(to right, black 60%, transparent 100%)'
             }}
+            className="absolute inset-0 rounded-lg overflow-hidden grayscale sepia-[0.25] brightness-[0.82] contrast-[1.05]"
           >
             <img
               src="/profile.jpg"
