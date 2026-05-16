@@ -1,8 +1,7 @@
-# 🎬 Cinematic Developer Portfolio — Mayank Prabhakar
+# 🎬 Portfolio — Mayank Prabhakar
 
 A high-performance, cinematic portfolio built with **Next.js 15**, **Framer Motion**, and **Tailwind CSS**. Designed to bridge the gap between complex engineering and intentional design.
 
-![Portfolio Preview](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200)
 
 ## 🛠️ Tech Stack
 
