@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Cinematic Developer Portfolio — Mayank Prabhakar
 
-## Getting Started
+A high-performance, cinematic portfolio built with **Next.js 15**, **Framer Motion**, and **Tailwind CSS**. Designed to bridge the gap between complex engineering and intentional design.
 
-First, run the development server:
+![Portfolio Preview](https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200)
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Tabler Icons](https://tabler-icons.io/)
+- **Contact**: [Web3Forms](https://web3forms.com/) (AJAX Integration)
+- **Typography**: Playfair Display (Serif), DM Sans (Sans), JetBrains Mono (Mono)
+
+## ✨ Key Features
+
+- **Cinematic Experience**: Custom cursor, grain overlay, and parallax effects for a premium feel.
+- **Dynamic Projects**: Interactive project cards with deep-dive technical documentation.
+- **Production Contact Form**: Fully functional form with loading states and email notifications.
+- **Responsive Design**: Flawless experience across Mobile, Tablet, and Desktop.
+- **Optimized Performance**: Next-gen image optimization and scroll-synchronized animations.
+
+## 📁 Project Structure
+
+```text
+├── src/
+│   ├── app/            # Next.js App Router (Pages & Layout)
+│   ├── components/     # Reusable UI Components (Hero, Projects, Contact, etc.)
+│   ├── hooks/          # Custom React Hooks (Intersection Observer)
+│   ├── lib/            # Utilities and Project Data
+│   └── public/         # Static Assets (Images, Resume)
+```
+
+## 🚀 Getting Started
+
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📧 Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Mayank Prabhakar**  
+B.Tech CSE Student @ Gautam Buddha University  
+Email: [255ucs033@gbu.ac.in](mailto:255ucs033@gbu.ac.in)  
+GitHub: [@decodermayank](https://github.com/decodermayank)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Designed & Built with ❤️ by Mayank Prabhakar
