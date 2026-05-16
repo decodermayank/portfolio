@@ -9,13 +9,20 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-6">
-          {["GitHub", "LinkedIn", "Instagram", "X"].map((social) => (
+          {[
+            { name: "GitHub", href: "https://github.com/decodermayank" },
+            { name: "LinkedIn", href: "https://www.linkedin.com/in/i-mayank-prabhakar-" },
+            { name: "Instagram", href: "https://www.instagram.com/i.mayank.prabhakar" },
+            { name: "X", href: "https://x.com/i_m_prabhakarr" }
+          ].map((social) => (
             <a 
-              key={social} 
-              href="#" 
+              key={social.name} 
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-xs font-mono uppercase tracking-[0.15em] text-text-muted hover:text-gold transition-colors"
             >
-              {social}
+              {social.name}
             </a>
           ))}
         </div>
