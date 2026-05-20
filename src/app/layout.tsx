@@ -21,8 +21,8 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mayank Prabhakar | Developer & Google Gemini Ambassador",
-  description: "Portfolio of Mayank Prabhakar, a Full Stack Developer, AI Web Development Intern, and Google Gemini Student Ambassador at Gautam Buddha University (GBU).",
+  title: "Mayank Prabhakar | Google Student Ambassador",
+  description: "Portfolio of Mayank Prabhakar, Google Student Ambassador and B.Tech CSE student at Gautam Buddha University exploring web development, technology, and community impact.",
   keywords: [
     "Mayank Prabhakar",
     "Mayank Prabhakar Portfolio",
@@ -53,14 +53,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://www.mayank-prabhakar.me",
-    title: "Mayank Prabhakar | Developer & AI Enthusiast",
-    description: "Portfolio of Mayank Prabhakar, Full Stack Developer and Google Gemini Student Ambassador at GBU.",
+    title: "Mayank Prabhakar | Google Student Ambassador",
+    description: "Portfolio of Mayank Prabhakar, Google Student Ambassador and B.Tech CSE student at Gautam Buddha University exploring web development, technology, and community impact.",
     siteName: "Mayank Prabhakar Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mayank Prabhakar | Developer",
-    description: "Portfolio of Mayank Prabhakar, Full Stack Developer and Google Gemini Student Ambassador at GBU.",
+    title: "Mayank Prabhakar | Google Student Ambassador",
+    description: "Portfolio of Mayank Prabhakar, Google Student Ambassador and B.Tech CSE student at Gautam Buddha University exploring web development, technology, and community impact.",
   },
 };
 
