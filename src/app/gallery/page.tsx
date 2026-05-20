@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import GalleryGrid from "@/components/GalleryGrid";
 
 export const metadata: Metadata = {
   title: "Mayank Prabhakar | Photo Gallery",
@@ -54,19 +55,7 @@ export default function Gallery() {
           A collection of moments from my journey as a developer, community builder, and student.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {photos.map((photo, i) => (
-            <div key={i} className="relative aspect-video rounded-xl overflow-hidden bg-surface border border-border">
-              {/* Google uses the 'alt' text and the file name to rank images in Google Image Search */}
-              <img
-                src={photo.src}
-                alt={photo.alt}
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
+        <GalleryGrid photos={photos} />
       </div>
     </main>
   );
