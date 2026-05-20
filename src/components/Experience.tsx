@@ -69,7 +69,7 @@ export default function Experience() {
 
           <div className="space-y-16">
             {experiences.map((exp, i) => (
-              <motion.div
+              <motion.article
                 key={exp.role + exp.company}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -106,7 +106,7 @@ export default function Experience() {
                 
                 {/* Empty Space for the other side on Desktop */}
                 <div className="hidden md:block md:w-1/2" />
-              </motion.div>
+              </motion.article>
             ))}
           </div>
         </div>

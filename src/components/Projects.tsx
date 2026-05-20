@@ -34,7 +34,7 @@ export default function Projects() {
           ].map((project, i) => {
             if (!project) return null;
             return (
-              <motion.div 
+              <motion.article 
                 key={project.slug}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -100,9 +100,10 @@ export default function Projects() {
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
-              </motion.div>
+              </motion.article>
             );
           })}
         </div>
