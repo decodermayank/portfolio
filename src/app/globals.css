@@ -26,12 +26,17 @@
   * {
     @apply border-border;
   }
-  
+
   body {
     @apply bg-bg text-text font-body selection:bg-gold/30 selection:text-white;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-display tracking-tight text-white;
   }
 }
@@ -40,7 +45,10 @@
   .glass {
     background: rgba(13, 13, 11, 0.82);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.06);
+    transform: translateZ(0);
+    /* Hardware acceleration */
   }
 
   .grain {
@@ -59,24 +67,56 @@
   }
 
   @keyframes noise {
-    0% { transform: translate(0,0) }
-    10% { transform: translate(-5%,-5%) }
-    20% { transform: translate(-10%,5%) }
-    30% { transform: translate(5%,-10%) }
-    40% { transform: translate(-5%,15%) }
-    50% { transform: translate(-10%,5%) }
-    60% { transform: translate(15%,0) }
-    70% { transform: translate(0,10%) }
-    80% { transform: translate(-15%,0) }
-    90% { transform: translate(10%,5%) }
-    100% { transform: translate(5%,0) }
+    0% {
+      transform: translate(0, 0)
+    }
+
+    10% {
+      transform: translate(-5%, -5%)
+    }
+
+    20% {
+      transform: translate(-10%, 5%)
+    }
+
+    30% {
+      transform: translate(5%, -10%)
+    }
+
+    40% {
+      transform: translate(-5%, 15%)
+    }
+
+    50% {
+      transform: translate(-10%, 5%)
+    }
+
+    60% {
+      transform: translate(15%, 0)
+    }
+
+    70% {
+      transform: translate(0, 10%)
+    }
+
+    80% {
+      transform: translate(-15%, 0)
+    }
+
+    90% {
+      transform: translate(10%, 5%)
+    }
+
+    100% {
+      transform: translate(5%, 0)
+    }
   }
 
   .reveal {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1),
-                transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+      transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .reveal.visible {
@@ -88,5 +128,3 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
-
-

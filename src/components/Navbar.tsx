@@ -17,15 +17,23 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 50);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <nav
+    <>
+      <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
         isScrolled ? "glass py-3" : "bg-transparent"
@@ -64,10 +72,11 @@ export default function Navbar() {
           <IconMenu2 size={24} />
         </button>
       </div>
+    </nav>
 
-      {/* Mobile Menu Overlay */}
+    {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-[60] bg-bg flex flex-col items-center justify-center gap-8 animate-in fade-in duration-300">
+        <div className="fixed inset-0 z-[60] bg-bg flex flex-col items-center justify-center gap-6 animate-in fade-in duration-300">
           <button
             className="absolute top-6 right-6 text-text hover:text-gold transition-colors"
             onClick={() => setMobileMenuOpen(false)}
@@ -86,13 +95,13 @@ export default function Navbar() {
           ))}
           <Link
             href="#contact"
-            className="mt-4 px-8 py-3 border border-gold text-gold text-lg font-mono uppercase tracking-widest rounded-sm hover:bg-gold hover:text-bg transition-all duration-300"
+            className="mt-2 px-8 py-3 border border-gold text-gold text-lg font-mono uppercase tracking-widest rounded-sm hover:bg-gold hover:text-bg transition-all duration-300"
             onClick={() => setMobileMenuOpen(false)}
           >
             Hire Me
           </Link>
         </div>
       )}
-    </nav>
+    </>
   );
 }

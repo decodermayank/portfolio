@@ -6,6 +6,13 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 const experiences = [
   {
     date: "May 2026 – Present",
+    role: "Google Student Ambassador",
+    company: "Google Gemini",
+    description: "Representing Google Gemini AI on campus by organizing technical workshops, driving AI awareness, and cultivating a next-generation tech community at Gautam Buddha University.",
+    icon: "🌟"
+  },
+  {
+    date: "May 2026 – Present",
     role: "AI Web Development Intern",
     company: "InAmigos Foundation (IAF)",
     description: "Focusing on Artificial Intelligence (AI) and Generative AI integration for modern web applications during a professional internship.",
