@@ -43,7 +43,7 @@ export default function About() {
         {/* Photo Container */}
         <div className="reveal relative aspect-[3/4] w-full hidden md:block">
           <motion.div
-            style={{ 
+            style={{
               y: imgY,
               maskImage: 'linear-gradient(to right, black 60%, transparent 100%)',
               WebkitMaskImage: 'linear-gradient(to right, black 60%, transparent 100%)'
