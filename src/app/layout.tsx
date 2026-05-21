@@ -21,6 +21,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.mayank-prabhakar.me"),
   title: "Mayank Prabhakar | Google Student Ambassador",
   description: "Portfolio of Mayank Prabhakar, Google Student Ambassador and B.Tech CSE student at Gautam Buddha University exploring web development, technology, and community impact.",
   keywords: [
@@ -49,6 +50,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Mayank Prabhakar" }],
   creator: "Mayank Prabhakar",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -74,12 +78,19 @@ export default function RootLayout({
     "@type": "Person",
     name: "Mayank Prabhakar",
     url: "https://www.mayank-prabhakar.me",
+    image: "https://www.mayank-prabhakar.me/profile.jpg",
     jobTitle: "Full Stack Developer & Google Gemini Student Ambassador",
     alumniOf: {
       "@type": "CollegeOrUniversity",
       name: "Gautam Buddha University",
       alternateName: "GBU"
     },
+    sameAs: [
+      "https://github.com/decodermayank",
+      "https://www.linkedin.com/in/i-mayank-prabhakar-",
+      "https://x.com/i_m_prabhakarr",
+      "https://www.instagram.com/i.mayank.prabhakar"
+    ],
     knowsAbout: ["Next.js", "React", "Artificial Intelligence", "Generative AI", "Web Development"]
   };
 

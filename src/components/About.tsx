@@ -52,7 +52,7 @@ export default function About() {
           >
             <img
               src="/profile.jpg"
-              alt="About Mayank"
+              alt="Mayank Prabhakar - Full Stack Developer and Google Student Ambassador at Gautam Buddha University"
               className="w-full h-full object-cover scale-125"
               onError={(e) => {
                 e.currentTarget.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000";

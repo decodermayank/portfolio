@@ -29,15 +29,17 @@ export default function Hero() {
           style={{ y, opacity }}
           className="z-10"
         >
+          <h1 className="sr-only">Mayank Prabhakar | Google Student Ambassador & Full Stack Developer Portfolio</h1>
+
           <div className="overflow-hidden mb-2">
-            <motion.span
+            <motion.h2
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
               className="block text-gold/80 font-display text-lg md:text-xl font-medium tracking-[0.2em] uppercase"
             >
               Mayank Prabhakar
-            </motion.span>
+            </motion.h2>
           </div>
 
           <motion.p
@@ -49,7 +51,7 @@ export default function Hero() {
             B.TECH CSE · GAUTAM BUDDHA UNIVERSITY · 2025–2029
           </motion.p>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.9] tracking-tighter mb-8 max-w-[700px] text-mask">
+          <h3 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.9] tracking-tighter mb-8 max-w-[700px] text-mask">
             {words.map((word, i) => (
               <span key={i} className="inline-block overflow-hidden pb-[0.1em] mr-[0.25em]">
                 <motion.span
@@ -66,7 +68,7 @@ export default function Hero() {
                 </motion.span>
               </span>
             ))}
-          </h1>
+          </h3>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -124,7 +126,7 @@ export default function Hero() {
           >
             <img 
               src="/profile.jpg" 
-              alt="Mayank Prabhakar"
+              alt="Mayank Prabhakar - Google Student Ambassador and Full Stack Developer profile photo"
               className="w-full h-full object-cover scale-110"
               onError={(e) => {
                 e.currentTarget.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000";
